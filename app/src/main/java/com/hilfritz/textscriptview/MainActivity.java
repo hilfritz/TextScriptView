@@ -15,13 +15,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textScriptView = (TextScriptView) findViewById(R.id.textScriptView);
-        textScriptView.setText("ccc");
-        textScriptView.setSubScriptText("ccc sub");
-        textScriptView.setSuperScriptText("ccc sup");
+        textScriptView.setText("E = MC");
+        textScriptView.setSuperScriptText("2");
 
         textScriptView.setTextColor(R.color.Navy);
         textScriptView.setSubScriptTextColor(R.color.Red);
-        textScriptView.setSuperScriptTextColor(R.color.SpringGreen);
+        textScriptView.setSuperScriptTextColor(R.color.Black);
 
         textScriptView.getTextView().setTypeface(FontCache.get(FontCache.FONT_GOTCHAGOTHIC_LIGHT, this));
         textScriptView.getSuperscriptTextView().setTypeface(FontCache.get(FontCache.FONT_GOTCHAGOTHIC_LIGHT, this));
@@ -29,9 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         textScriptView2 = (TextScriptView) findViewById(R.id.textScriptView2);
-        textScriptView2.setText("DDD");
-        textScriptView2.setSubScriptText("DDD Sub");
-        textScriptView2.setSuperScriptText("DDD Sup");
+        textScriptView2.setText("Registered Trademark");
+        textScriptView2.setSuperScriptText("(R)");
 
         textScriptView2.setTextColor(R.color.ForestGreen);
         textScriptView2.setSubScriptTextColor(R.color.Turquoise);

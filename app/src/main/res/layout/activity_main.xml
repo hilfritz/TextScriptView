@@ -249,11 +249,42 @@
         app:subTextColor="@color/DarkBlue"
         android:layout_marginTop="@dimen/margin_d"
         />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalText="Propane = "
+            app:normalTextColor="@color/DarkBlue"
+            />
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalText="C"
+            app:subText="3"
+            app:normalTextColor="@color/DarkBlue"
+            app:normalBetweenScriptMargin="1dp"
+            android:layout_marginRight="2dp"
+            />
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalText="H"
+            app:subText="8"
+            app:normalTextColor="@color/DarkBlue"
+            app:normalBetweenScriptMargin="1dp"
+            />
+    </LinearLayout>
     <com.hilfritz.library.textscriptview.TextScriptView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textScriptView"
-        app:normalBetweenScriptMargin="@dimen/margin_l"
         android:layout_marginTop="@dimen/margin_d"
         />
     <com.hilfritz.library.textscriptview.TextScriptView
@@ -262,6 +293,7 @@
         android:id="@+id/textScriptView2"
         android:layout_marginTop="@dimen/margin_d"
         />
+
 
 
 
