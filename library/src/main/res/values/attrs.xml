@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextScriptView">
+        <attr name="normalText" format="string"/>
+        <attr name="superText" format="string"/>
+        <attr name="subText" format="string"/>
+
+
+        <attr name="normalTextSize" format="dimension"/>
+        <attr name="superTextSize" format="dimension"/>
+        <attr name="subTextSize" format="dimension"/>
+
+        <attr name="normalTextColor" format="color"/>
+        <attr name="superTextColor" format="color"/>
+        <attr name="subTextColor" format="color"/>
+
+
+
+
+        <attr name="normalBetweenScriptMargin" format="dimension"/>
+
+
+
+    </declare-styleable>
+</resources>
