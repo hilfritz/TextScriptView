@@ -12,9 +12,9 @@ Attributes
  * normalTextColor = resource for the color of normal text
  * subTextColor  = resource for the color of subscript text
  * superTextColor  = resource for the color of superscript text
- * normalTextSize = resource for the color of normal size
- * subTextSize  = resource for the color of subscript size
- * superTextSize  = resource for the color of superscript size
+ * normalTextSize = resource for the normal text size
+ * subTextSize  = resource for the subscript size
+ * superTextSize  = resource for the superscript size
  * normalBetweenScriptMargin = the horizontal distance between the superscript/subscript to the main text
  * moveSuperUp = moves the superscript up (this is a dimension resource )
  * moveSubDown = moves the subscript up (this is a dimension resource )
