@@ -15,13 +15,15 @@
     <com.hilfritz.library.textscriptview.TextScriptView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:normalText="aaa"
-        app:superText="aaa"
-        app:subText="aaa"
+        app:normalText="AAA"
+        app:subText="AAA"
+        app:superText="AAA"
         app:normalTextColor="@color/colorPrimary"
         app:superTextColor="@color/colorAccent"
         app:subTextColor="@color/DarkOrchid"
-        app:normalBetweenScriptMargin="@dimen/margin_d"
+        app:normalBetweenScriptMargin="2dp"
+        app:moveSuperUp="1dp"
+        app:moveSubDown="1dp"
         />
     <com.hilfritz.library.textscriptview.TextScriptView
         android:layout_width="wrap_content"

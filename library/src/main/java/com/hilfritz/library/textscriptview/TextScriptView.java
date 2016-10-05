@@ -28,10 +28,15 @@ public class TextScriptView extends RelativeLayout {
     String superText;
     String subText;
 
+    //
+    float moveSuperUp = 0;
+    float moveSubDown = 0;
+
     //THE VIEWS
     TextView normalTextView;
     TextView subscriptTextView;
     TextView superscriptTextView;
+    RelativeLayout parentRelativeLayout;
 
 
 
@@ -49,6 +54,9 @@ public class TextScriptView extends RelativeLayout {
             normalTextSize = a.getDimension(R.styleable.TextScriptView_normalTextSize, getResources().getDimension(R.dimen.normal_text_size));
             superTextSize = a.getDimension(R.styleable.TextScriptView_superTextSize, getResources().getDimension(R.dimen.super_text_size));
             subTextSize = a.getDimension(R.styleable.TextScriptView_subTextSize, getResources().getDimension(R.dimen.sub_text_size));
+
+            moveSubDown = a.getDimension(R.styleable.TextScriptView_moveSubDown,0);
+            moveSuperUp = a.getDimension(R.styleable.TextScriptView_moveSuperUp, 0);
 
             normalTextColor = a.getColor(R.styleable.TextScriptView_normalTextColor, ContextCompat.getColor(getContext(), R.color.Black));
             superTextColor = a.getColor(R.styleable.TextScriptView_superTextColor, ContextCompat.getColor(getContext(), R.color.Black));
@@ -89,6 +97,7 @@ public class TextScriptView extends RelativeLayout {
         normalTextView = (TextView) findViewById(R.id.normalTextView);
         subscriptTextView = (TextView) findViewById(R.id.subscriptTextView);
         superscriptTextView = (TextView) findViewById(R.id.superscriptTextView);
+        parentRelativeLayout = (RelativeLayout) findViewById(R.id.parentRelativeLayout);
 
         //INITIALIZE THE TEXT COLORS
         setTextColor(R.color.Black);
@@ -118,14 +127,33 @@ public class TextScriptView extends RelativeLayout {
         addText(subscriptTextView, subText);
 
         //ADD THE SPACE MARGIN
-
-
-
         RelativeLayout.LayoutParams layoutParams = (LayoutParams) normalTextView.getLayoutParams();
         layoutParams.setMargins(layoutParams.leftMargin, layoutParams.topMargin, Math.round(normalBetweenScriptMargin), layoutParams.bottomMargin);
         normalTextView.requestLayout();
 
+        //ADD THE MOVEMENT (translation)
+        LayoutParams layoutParams1 = (LayoutParams) normalTextView.getLayoutParams();
+        normalTextView.setPadding(normalTextView.getPaddingLeft(), Math.round(moveSuperUp), normalTextView.getPaddingRight(), Math.round(moveSubDown));
+        normalTextView.requestLayout();
 
+        /*
+        if (moveSuperUp!=0){
+            //MAKE SURE THE MOVING UP VALUE IS NEGATIVE
+            moveSuperUp = moveSuperUp * -1;
+        }
+        layoutParams.setMargins(layoutParams.leftMargin, Math.round(moveSubDown), Math.round(normalBetweenScriptMargin), Math.round(moveSuperUp));
+        normalTextView.requestLayout();
+
+        //ADD BOTTOM MARGIN TO SUPERSCRIPT TO MOVE IT UP
+        RelativeLayout.LayoutParams superscriptLayoutParams = (LayoutParams) superscriptTextView.getLayoutParams();
+        superscriptLayoutParams.setMargins(superscriptLayoutParams.leftMargin, superscriptLayoutParams.topMargin, superscriptLayoutParams.rightMargin, Math.round(moveSubDown));
+        superscriptTextView.requestLayout();
+
+        //ADD TOP MARGIN TO SUbSCRIPT TO MOVE IT DOWN
+        RelativeLayout.LayoutParams subscriptLayoutParams = (LayoutParams) subscriptTextView.getLayoutParams();
+        subscriptLayoutParams.setMargins(subscriptLayoutParams.leftMargin, Math.round(moveSuperUp), subscriptLayoutParams.rightMargin, subscriptLayoutParams.bottomMargin);
+        subscriptTextView.requestLayout();
+        */
     }
 
     private void addTextSize(TextView textView, float textSize) {
@@ -180,5 +208,17 @@ public class TextScriptView extends RelativeLayout {
     public void setSpaceInBetween(float dimen){
             RelativeLayout.LayoutParams layoutParams = (LayoutParams) normalTextView.getLayoutParams();
             layoutParams.setMargins(layoutParams.leftMargin, layoutParams.topMargin, Math.round(dimen), layoutParams.bottomMargin);
+    }
+
+    public TextView getTextView() {
+        return normalTextView;
+    }
+
+    public TextView getSubscriptTextView() {
+        return subscriptTextView;
+    }
+
+    public TextView getSuperscriptTextView() {
+        return superscriptTextView;
     }
 }

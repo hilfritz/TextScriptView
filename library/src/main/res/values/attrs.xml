@@ -10,6 +10,11 @@
         <attr name="superTextSize" format="dimension"/>
         <attr name="subTextSize" format="dimension"/>
 
+
+        <attr name="moveSuperUp" format="dimension"/>
+        <attr name="moveSubDown" format="dimension"/>
+
+
         <attr name="normalTextColor" format="color"/>
         <attr name="superTextColor" format="color"/>
         <attr name="subTextColor" format="color"/>
