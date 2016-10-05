@@ -12,39 +12,257 @@
     android:orientation="vertical"
     >
 
+
     <com.hilfritz.library.textscriptview.TextScriptView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:normalText="AAA"
-        app:subText="AAA"
-        app:superText="AAA"
-        app:normalTextColor="@color/colorPrimary"
-        app:superTextColor="@color/colorAccent"
-        app:subTextColor="@color/DarkOrchid"
+        app:normalText="98"
+        app:superText="o"
+        app:normalTextColor="@color/Teal"
+        app:superTextColor="@color/Navy"
         app:normalBetweenScriptMargin="2dp"
         app:moveSuperUp="1dp"
         app:moveSubDown="1dp"
         />
+
+
     <com.hilfritz.library.textscriptview.TextScriptView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:normalText="bbb"
-        app:superText="bbb"
-        app:subText="bbb"
-        app:normalTextColor="@color/Maroon"
-        app:superTextColor="@color/OrangeRed"
-        app:subTextColor="@color/Aquamarine"
-        app:normalBetweenScriptMargin="@dimen/margin_h"
+        app:normalText="Bicarbonate - HC"
+        app:subText="3"
+        app:normalTextColor="@color/Black"
+        app:subTextColor="@color/Black"
+        android:layout_marginTop="@dimen/margin_d"
+        app:normalBetweenScriptMargin="1dp"
+        />
+
+    <com.hilfritz.library.textscriptview.TextScriptView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:normalText="$ 23."
+        app:superText="99"
+        app:normalTextColor="@color/Black"
+        app:subTextColor="@color/DarkGreen"
+        android:layout_marginTop="@dimen/margin_d"
+        app:normalBetweenScriptMargin="0dp"
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:normalText="X"
+            app:superText="abc"
+            app:subText="c"
+            app:normalTextColor="@color/Black"
+            app:subTextColor="@color/DarkGreen"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalBetweenScriptMargin="2dp"
+            android:layout_marginRight="@dimen/margin_a"
+            />
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:normalText="X"
+            app:superText="c"
+            app:subText="ab"
+            app:normalTextColor="@color/Black"
+            app:subTextColor="@color/DarkGreen"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalBetweenScriptMargin="2dp"
+            android:layout_marginRight="@dimen/margin_a"
+            />
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:normalText="X"
+            app:normalTextColor="@color/Black"
+            app:subTextColor="@color/DarkGreen"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalBetweenScriptMargin="2dp"
+            android:layout_marginRight="@dimen/margin_a"
+            />
+    </LinearLayout>
+
+
+    <com.hilfritz.library.textscriptview.TextScriptView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:normalText="199"
+        app:normalTextSize="20sp"
+        app:superText="99/100"
+        app:normalTextColor="@color/Black"
+        app:subTextColor="@color/DarkGreen"
+        android:layout_marginTop="@dimen/margin_d"
+        app:normalBetweenScriptMargin="0dp"
+        />
+
+    <com.hilfritz.library.textscriptview.TextScriptView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:normalText="X"
+        app:superText="y"
+        app:normalTextColor="@color/Black"
+        app:superTextColor="@color/Gray"
+        android:layout_marginTop="@dimen/margin_d"
+        app:normalBetweenScriptMargin="0dp"
+        app:moveSuperUp="3dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:normalText="1"
+            app:superText="st"
+            app:normalTextColor="@color/Black"
+            app:superTextColor="@color/Blue"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalBetweenScriptMargin="0dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:normalText="2"
+            app:superText="nd"
+            app:normalTextColor="@color/Black"
+            app:superTextColor="@color/Blue"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalBetweenScriptMargin="0dp"
+            android:layout_marginRight="5dp"
+            />
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:normalText="3"
+            app:superText="rd"
+            app:normalTextColor="@color/Black"
+            app:superTextColor="@color/Blue"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalBetweenScriptMargin="0dp"
+            android:layout_marginRight="5dp"
+            />
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:normalText="4"
+            app:superText="th"
+            app:normalTextColor="@color/Black"
+            app:superTextColor="@color/Blue"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalBetweenScriptMargin="0dp"
+            android:layout_marginRight="5dp"
+            />
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:normalText="5"
+            app:superText="th"
+            app:normalTextColor="@color/Black"
+            app:superTextColor="@color/Blue"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalBetweenScriptMargin="0dp"
+            android:layout_marginRight="5dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:normalText="a"
+            app:superText="2"
+            app:normalTextColor="@color/Black"
+            app:superTextColor="@color/DarkGreen"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalBetweenScriptMargin="0dp"
+            android:layout_marginRight="5dp"
+            />
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:normalText="+"
+            app:normalTextColor="@color/Black"
+            app:subTextColor="@color/Blue"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalBetweenScriptMargin="0dp"
+            android:layout_marginRight="5dp"
+            />
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:normalText="b"
+            app:superText="2"
+            app:normalTextColor="@color/Black"
+            app:superTextColor="@color/DarkGreen"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalBetweenScriptMargin="0dp"
+            android:layout_marginRight="5dp"
+            />
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:normalText="="
+            app:normalTextColor="@color/Black"
+            app:subTextColor="@color/Blue"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalBetweenScriptMargin="0dp"
+            android:layout_marginRight="5dp"
+            />
+        <com.hilfritz.library.textscriptview.TextScriptView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:normalText="c"
+            app:superText="2"
+            app:normalTextColor="@color/Black"
+            app:superTextColor="@color/DarkGreen"
+            android:layout_marginTop="@dimen/margin_d"
+            app:normalBetweenScriptMargin="0dp"
+            android:layout_marginRight="5dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <com.hilfritz.library.textscriptview.TextScriptView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:normalText="Company"
+        app:subText="Ltd"
+        app:normalTextColor="@color/DarkBlue"
+        app:subTextColor="@color/DarkBlue"
+        android:layout_marginTop="@dimen/margin_d"
         />
     <com.hilfritz.library.textscriptview.TextScriptView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textScriptView"
         app:normalBetweenScriptMargin="@dimen/margin_l"
+        android:layout_marginTop="@dimen/margin_d"
         />
     <com.hilfritz.library.textscriptview.TextScriptView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textScriptView2"
+        android:layout_marginTop="@dimen/margin_d"
         />
+
+
+
 </LinearLayout>
