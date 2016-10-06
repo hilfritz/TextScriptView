@@ -4,7 +4,7 @@ A view that implements a textview with subscript and superscript support.
 ![alt tag](https://github.com/hilfritz/TextScriptView/blob/master/screenshot.png)
 
 
-Attributes
+### Attributes
 
  * normalText = the main text
  * subText = the subscript text
@@ -20,13 +20,13 @@ Attributes
  * moveSubDown = moves the subscript up (this is a dimension resource )
  *
 
-Public Methods
+### Public Methods
 
  * getTextView() = returns the textView for the main text
  * getSubscriptTextView() = returns the textview for the subscript text
  * getSuperscriptTextView() = returns the textview for the superscript text
 
-Sample usage!
+### Sample
 
 ```xml
 
@@ -43,7 +43,12 @@ Sample usage!
 
 ```
 
-Adding font/typeface:
+##### Adding font/typeface:
+Works the same way with TextView, just retrieve the textview object.
+
+
+
+Sample:
 
 ```java
 
