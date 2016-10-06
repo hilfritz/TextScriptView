@@ -11,9 +11,12 @@ import java.util.Hashtable;
  */
 
 public class FontCache {
-    public static final String FONT_3DHANDDRAWNS =   "3DHandDrawns.ttf";
-    public static final String FONT_GOTCHAGOTHIC_LIGHT =   "GotchaGothicLight.ttf";
-    public static final String FONT_MARKINSON =   "Markinson.otf";
+    public static final String FONT_OPENSANS_LIGHT =   "OpenSans-Light.ttf";
+    public static final String FONT_OPENSANS_REGULAR =   "OpenSans-Regular.ttf";
+    public static final String FONT_LATO_LIGHT =   "Lato-Light.ttf";
+    public static final String FONT_LATO_REGULAR =   "Lato-Regular.ttf";
+    public static final String FONT_RALEWAY_LIGHT =   "Raleway-Light.ttf";
+    public static final String FONT_RALEWAY_REGULAR =   "Raleway-Regular.ttf";
 
     private static String getPath(String str){
         return str;

@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         textScriptView.setSubScriptTextColor(R.color.Red);
         textScriptView.setSuperScriptTextColor(R.color.Black);
 
-        textScriptView.getTextView().setTypeface(FontCache.get(FontCache.FONT_GOTCHAGOTHIC_LIGHT, this));
-        textScriptView.getSuperscriptTextView().setTypeface(FontCache.get(FontCache.FONT_GOTCHAGOTHIC_LIGHT, this));
-        textScriptView.getSubscriptTextView().setTypeface(FontCache.get(FontCache.FONT_GOTCHAGOTHIC_LIGHT, this));
+        textScriptView.getTextView().setTypeface(FontCache.get(FontCache.FONT_RALEWAY_REGULAR, this));
+        textScriptView.getSuperscriptTextView().setTypeface(FontCache.get(FontCache.FONT_LATO_REGULAR, this));
+        textScriptView.getSubscriptTextView().setTypeface(FontCache.get(FontCache.FONT_OPENSANS_REGULAR, this));
 
 
         textScriptView2 = (TextScriptView) findViewById(R.id.textScriptView2);
@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         textScriptView2.setTextColor(R.color.ForestGreen);
         textScriptView2.setSubScriptTextColor(R.color.Turquoise);
         textScriptView2.setSuperScriptTextColor(R.color.DimGray);
+        textScriptView2.getSuperscriptTextView().setTypeface(FontCache.get(FontCache.FONT_OPENSANS_REGULAR, this));
+        textScriptView2.getTextView().setTypeface(FontCache.get(FontCache.FONT_OPENSANS_REGULAR, this));
 
 
     }
